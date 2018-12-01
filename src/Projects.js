@@ -20,9 +20,9 @@ class Projects extends React.Component {
                 <p style={{paddingRight: '20px', paddingLeft: '20px'}}>
                     The service first solves the common problem of not knowing who will inherit.
                     After that a legally valid will can be created without typing anything, besides names.
-                    Service extracts all of the legally valid facts from the user and therefore can algoritmically
-                    make suggestion for the most sound solution. These facts are gathered by presenting questions
-                    in a way that everyone understands without prior knowledge of the law. 
+                    Visual and clever design ensures that all of the legally valid facts are gathered from the user and therefore the service can algoritmically
+                    make suggestion for the most sound solution. Questions are presented
+                    in a way that everyone understands without a prior knowledge of the law. 
                     {/* With visual and clever service design user is being asked all the legally relevant questions in way that everyone understands.   */}
                     {' '}
                     Based on the answers, the service suggests clauses for the user's specific situation.
@@ -53,7 +53,7 @@ class Projects extends React.Component {
                     requires much more than just raw knowledge of the law. Our products extract all of the legally valid facts
                     and therefore can algoritmically make suggestion for the most sound solution.
                     By designing services that are "computationally kind",
-                    we aim to show the user only the relevant legal information regarding her case.
+                    we aim to show the user only the relevant legal information and course of action regarding her case.
                 </p>
                 </div>
                 <div className="App-project-image">

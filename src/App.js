@@ -22,7 +22,9 @@ class App extends Component {
         <Projects/>
       </div>
       <div className="App-team">
+        <div className="App-team-header">
         TEAM
+        </div>
         <Avatar/>
       </div>
       </div>

@@ -24,9 +24,18 @@ function ImageAvatars(props) {
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
       Fluent in C and law
     </div>
+    <div>
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
+      Unbeatable at Singa
+    </div>
+    <div>
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
+      Drinks only Crisp
+    </div>
+    <div>
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
+      Makes anything with nothing
+    </div>
     </Grid>
   );
 }
