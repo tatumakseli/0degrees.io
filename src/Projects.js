@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Fade from 'react-reveal/Fade';
 
 
 class Projects extends React.Component {
@@ -7,6 +8,7 @@ class Projects extends React.Component {
 
     return (
         <div>
+            <Fade left>
             <Grid container className="App-project" justify="space-evenly">
                 <div className="App-project-image">
                     <div className="linkki">
@@ -44,6 +46,8 @@ class Projects extends React.Component {
                 </p>
                 </div>        
             </Grid>
+            </Fade>
+            <Fade right>
             <Grid container className="App-project" justify="space-evenly">
                 <div className="App-project-text">
                 <p style={{paddingRight: '20px', paddingLeft: '20px'}}>
@@ -60,6 +64,7 @@ class Projects extends React.Component {
                 <p>Upcoming products</p>
                 </div>        
             </Grid>
+            </Fade>
         </div>
     );
   }
