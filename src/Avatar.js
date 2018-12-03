@@ -11,8 +11,10 @@ const styles = {
   },
   bigAvatar: {
     margin: 10,
-    width: 200,
-    height: 200,
+    width: '15vw',
+    height: '15vw',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
 };
 
@@ -20,19 +22,19 @@ function ImageAvatars(props) {
   const { classes } = props;
   return (
     <Grid container justify="space-evenly">
-    <div>
+    <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
       Fluent in C and law
     </div>
-    <div>
+    <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
       Unbeatable at Singa
     </div>
-    <div>
+    <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
       Drinks only Crisp
     </div>
-    <div>
+    <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
       Makes anything with nothing
     </div>
