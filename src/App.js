@@ -6,17 +6,37 @@ import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import Flip from 'react-reveal/Flip';
 import Zoom from 'react-reveal/Zoom';
+import SlideMenu from 'react-slide-menu'
 
 class App extends Component {
+
+  
+  state = {
+    slideMenuActive: false
+  }
+  
+
+
   render() {
+    console.log(this.state)
+    const nav = [
+      {id: 'home', label: 'Home', path: '/'},
+      {id: 'about', label: 'About', path: '/about'},
+      {id: 'discover', label: 'Discover', path: '/discover'},
+    ]
     return (
+
+      <SlideMenu
+        active={this.state.slideMenuActive}
+        nav={nav}
+        closeMenu={() => this.setState({slideMenuActive: false})}>
       <div>
         <div className="App">
           <header className="App-header">
-            <div className="App-logo">
-            0DEGREES
+            <div className="App-logo" onClick={() => {this.setState({slideMenuActive: !this.state.slideMenuActive})}}>
+            0DEGREE
             </div>
-            <p className="fade-in">
+            <p className="fade-in">  
               The future of legal services, <b>for everyone</b>
             </p>
             
@@ -34,9 +54,11 @@ class App extends Component {
         <Zoom>
           <Avatar/>
         </Zoom>
+      
   
       </div>
       </div>
+      </SlideMenu>
     );
   }
 }
