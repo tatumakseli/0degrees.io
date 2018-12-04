@@ -10,6 +10,7 @@ class Projects extends React.Component {
         <div>
             <Fade left>
             <Grid container className="App-project" justify="space-evenly">
+                
                 <div className="App-project-image">
                     <div className="linkki">
                         <a href='https://kukaperii.fi'>Kukaperii.fi</a>
@@ -20,19 +21,20 @@ class Projects extends React.Component {
                 </div>
                 <div className="App-project-text">
                 <p style={{paddingRight: '20px', paddingLeft: '20px'}}>
-                    The service first solves the common problem of not knowing who will inherit.
-                    After that a legally valid will can be created without typing anything, besides names.
-                    Visual and clever design ensures that all of the legally valid facts are gathered from the user and therefore the service can algoritmically
-                    make suggestion for the most sound solution. Questions are presented
-                    in a way that everyone understands without a prior knowledge of the law. 
+                    A legally valid and optimal last will can be created without typing anything, besides names.
+                    Visual and clever design ensures that the user is being asked all of the legally relevant questions in way that is easy understands.
+                    The service then makes suggestions for the most usefull clauses to be considered in this particular case.
+                    Personalized examples help to explain what kind real life effect's clauses will have and 
+                    user can easily, and without any prior knowledge of the law, make the best decions for her unique case.
+                    
+                    {/* Visual and clever design ensures that all of the necessary facts are gathered from the user and therefore the service can algorithmically make suggestions for the most sound solution.  */}
+                    {/* Suggestion are presented in a way that everyone understands without a prior knowledge of the law. */}
                     {/* With visual and clever service design user is being asked all the legally relevant questions in way that everyone understands.   */}
                     {' '}
-                    Based on the answers, the service suggests clauses for the user's specific situation.
-                    With the help of personalized examples that explain what kind real life effect's clauses will have, the user can easily make the best decions for her unique case.
-                    Besides valid, the clauses are legally and taxationally optimal.
+
                     <br/>
                     <br/>
-                    In very complex estate planning situations the service can be paired with a lawyer. 
+                    {/* In very complex estate planning situations the service can be paired with a lawyer. 
                     As the service captures information about the will creator’s legal inheritors and family situation, 
                     the types of property she has and how she would like to have her inheritance to be distributed, 
                     it reduces lawyer’s work load substantially.
@@ -41,27 +43,34 @@ class Projects extends React.Component {
                     Besides B2C, the service is also provided as SaaS. B2B use cases range from cutting the workload of legal service providers 
                     to aiding non-profits in encouraging people to give charitable gifts in their last wills.
                     <br/>
-                    <br/>
+                    <br/> */}
                     Registration of EU Community design is pending.
                 </p>
-                </div>        
+                </div>
+                     
             </Grid>
-            </Fade>
+            </Fade> 
+            
             <Fade right>
             <Grid container className="App-project" justify="space-evenly">
                 <div className="App-project-text">
                 <p style={{paddingRight: '20px', paddingLeft: '20px'}}>
-                    We are currently doing research and developing multiple products in the space of legal services.
-                    Our solutions apply design thinking for solving legal problems.
-                    We are confident that providing legal services to our focus group, individuals and SMEs,
-                    requires much more than just raw knowledge of the law. Our products extract all of the legally valid facts
-                    and therefore can algoritmically make suggestion for the most sound solution.
-                    By designing services that are "computationally kind",
-                    we aim to show the user only the relevant legal information and course of action regarding her case.
+                    {/* We are currently doing research and developing multiple products in the space of legal services. */}
+                    We create a new market of legal services by giving individuals and SMEs access to superior quality digital legal services.
+                    We solve the problem of needing a lawyer by applying design thinking and principles.
+                    Users are guided through a carefully designed service that makes sure that the legally irrelevant facts are left out and the legally relevant ones
+                    are categorised. This information is used to algoritmically make suggestion for the most sound course of action.
+{/*                     
+                    We are confident that providing legal services to our focus group, individuals and SMEs, requires much more than just raw knowledge of the law. 
+                    Our approach is to sort out the  by guiding the user 
+                    Using this process we have legally relevant pieces of information categorised and and extract all of the legally valid facts
+                    and therefore can algoritmically make suggestion for the most sound solution. */}
+                    {/* By designing services that are "computationally kind",
+                    we aim to show the user only the relevant legal information and course of action regarding her case. */}
                 </p>
                 </div>
                 <div className="App-project-image">
-                <p>Upcoming products</p>
+                <p>What we do</p>
                 </div>        
             </Grid>
             </Fade>

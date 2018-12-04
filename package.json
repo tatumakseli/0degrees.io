@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "react": "^16.6.3",
+    "react-card-flip": "^0.3.0",
     "react-dom": "^16.6.3",
     "react-reveal": "^1.2.2",
     "react-scripts": "2.1.1",

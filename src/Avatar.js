@@ -24,19 +24,25 @@ function ImageAvatars(props) {
     <Grid container justify="space-evenly">
     <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
-      Fluent in C and law
+      Sakari Pesonen
+      <p className="avatar-quote">Makes anything with nothing</p>
+      
     </div>
     <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
-      Unbeatable at Singa
+      Severi Haverila
+      <p className="avatar-quote">Unbeatable at Singa</p>
     </div>
     <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
-      Drinks only Crisp
+      Aku Pöllänen
+      <p className="avatar-quote">Drinks only Crisp</p>
     </div>
     <div className="avatar-container">
       <Avatar alt="Tatu" src={kuva} className={classes.bigAvatar} />
-      Makes anything with nothing
+      Tatu Mäenpää
+      <p className="avatar-quote">Fluent in C and law</p>
+      
     </div>
     </Grid>
   );

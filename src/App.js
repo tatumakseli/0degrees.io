@@ -14,7 +14,6 @@ class App extends Component {
   state = {
     slideMenuActive: false
   }
-  
 
 
   render() {
@@ -26,18 +25,19 @@ class App extends Component {
     ]
     return (
 
-      <SlideMenu
-        active={this.state.slideMenuActive}
-        nav={nav}
-        closeMenu={() => this.setState({slideMenuActive: false})}>
+      // <SlideMenu
+      //   active={this.state.slideMenuActive}
+      //   nav={nav}
+      //   closeMenu={() => this.setState({slideMenuActive: false})}>
       <div>
         <div className="App">
           <header className="App-header">
             <div className="App-logo" onClick={() => {this.setState({slideMenuActive: !this.state.slideMenuActive})}}>
-            0DEGREE
+            0DEGREES
             </div>
             <p className="fade-in">  
               The future of legal services, <b>for everyone</b>
+              {/* Creating the future of legal markets */}
             </p>
             
           </header>
@@ -58,7 +58,7 @@ class App extends Component {
   
       </div>
       </div>
-      </SlideMenu>
+      // </SlideMenu>
     );
   }
 }
