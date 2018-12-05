@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
-
+import logoblack from  './logoblack.svg';
 
 class Projects extends React.Component {
   render() {
@@ -12,8 +12,10 @@ class Projects extends React.Component {
             <Grid container className="App-project" justify="space-evenly">
                 
                 <div className="App-project-image">
-                    <div className="linkki">
-                        <a href='https://kukaperii.fi'>Kukaperii.fi</a>
+                    <div className="linkkikuva" >
+                    <div className="kuvakontti">
+                    <a href="https://kukaperii.fi"><img className="kuva" src={logoblack} alt="Kuka Perii"  /></a>
+                    </div>
                     </div>
                     <div className="sublinkki">
                         {/* Inheritance planning made for people. */}
@@ -26,26 +28,28 @@ class Projects extends React.Component {
                     The service then makes suggestions for the most usefull clauses to be considered in this particular case.
                     Personalized examples help to explain what kind real life effect's clauses will have and 
                     user can easily, and without any prior knowledge of the law, make the best decions for her unique case.
-                    </p>
+                    
                     {/* Visual and clever design ensures that all of the necessary facts are gathered from the user and therefore the service can algorithmically make suggestions for the most sound solution.  */}
                     {/* Suggestion are presented in a way that everyone understands without a prior knowledge of the law. */}
                     {/* With visual and clever service design user is being asked all the legally relevant questions in way that everyone understands.   */}
                     {' '}
-
-                    {/* In very complex estate planning situations the service can be paired with a lawyer. 
+                    <br/>
+                    <br/> 
                     As the service captures information about the will creator’s legal inheritors and family situation, 
                     the types of property she has and how she would like to have her inheritance to be distributed, 
                     it reduces lawyer’s work load substantially.
+                    In very complex estate planning situations pairing the service with a lawyer is an excellent option.
                     <br/>
                     <br/>
                     Besides B2C, the service is also provided as SaaS. B2B use cases range from cutting the workload of legal service providers 
                     to aiding non-profits in encouraging people to give charitable gifts in their last wills.
                     <br/>
-                    <br/> */}
-                    <p style={{paddingLeft: '30px', paddingRight: '30px', fontSize: '0.75em'}}><i>For example, service recognises user's want to leave an apartment to his partner but there is also children and granchildren.
+                    <br/>
+                    </p>
+                    {/* <p style={{paddingLeft: '30px', paddingRight: '30px', fontSize: '0.75em'}}><i>For example, service recognises user's want to leave an apartment to his partner but there is also children and granchildren.
                     Service than suggests that the apartment could be left to the partner only with limited rights and the ownership would be left to descendants.
                     User is being explained what this arrangment would mean in real life and how much could be saved in taxation.
-                    </i></p>
+                    </i></p> */}
                     <p style={{paddingRight: '20px', paddingLeft: '20px'}}>
                     Registration of EU Community design is pending.
                 </p>
@@ -74,7 +78,11 @@ class Projects extends React.Component {
                 </p>
                 </div>
                 <div className="App-project-image">
-                <p>What we do</p>
+                <div className="linkkiteksti" >
+                    <div className="tekstikontti">
+                    <p className="teksti">0DEGREES</p>
+                    </div>
+                </div>
                 </div>        
             </Grid>
             </Fade>
