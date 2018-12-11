@@ -8,6 +8,8 @@ import sakkekuva from './sakke.jpg';
 import sepakuva from './sepa.jpg';
 import akukuva from './aku.jpg';
 
+
+
 const styles = {
   avatar: {
     margin: 10,
@@ -26,25 +28,25 @@ function ImageAvatars(props) {
   return (
     <Grid container justify="space-evenly">
     <div className="avatar-container">
-      <Avatar alt="Sakke" src={sakkekuva} className={classes.bigAvatar} />
-      Sakari Pesonen
-      <p className="avatar-quote">Makes anything with nothing</p>
-      
-    </div>
-    <div className="avatar-container">
       <Avatar alt="Tatu" src={sepakuva} className={classes.bigAvatar} />
-      Severi Haverila
-      <p className="avatar-quote">Unbeatable at Singa</p>
+      <p className="avatar-text">Severi Haverila</p>
+      {/* <p className="avatar-quote">Unbeatable at Singa</p> */}
     </div>
     <div className="avatar-container">
       <Avatar alt="Tatu" src={akukuva} className={classes.bigAvatar} />
-      Aku Pöllänen
-      <p className="avatar-quote">Drinks only Crisp</p>
+      <p className="avatar-text">Aku Pöllänen</p>
+      {/* <p className="avatar-quote">Drinks only Crisp</p> */}
     </div>
     <div className="avatar-container">
       <Avatar alt="Tatu" src={tatukuva} className={classes.bigAvatar} />
-      Tatu Mäenpää
-      <p className="avatar-quote">Fluent in C and law</p>
+      <p className="avatar-text">Tatu Mäenpää</p>
+      {/* <p className="avatar-quote">Fluent in C and law</p> */}
+      
+    </div>
+    <div className="avatar-container">
+      <Avatar alt="Sakke" src={sakkekuva} className={classes.bigAvatar} />
+      <p className="avatar-text">Sakari Pesonen</p>
+      {/* <p className="avatar-quote">Makes anything with nothing</p> */}
       
     </div>
     </Grid>

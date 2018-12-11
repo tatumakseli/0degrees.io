@@ -3,32 +3,107 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 
-.App {
+.show{
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+  visibility: visible; 
+}
+
+.show.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.hide {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+  visibility: hidden; 
+}
+
+.companytext {
+  font-size: calc(6px + 2vmin);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  padding-left: 10vw;
+  padding-right: 10vw
+  
+}
+
+.kukaperiitext {
+  font-size: calc(6px + 2vmin);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  padding-left: 10vw
+  
+}
+
+.headi {
+  font-size: calc(20px + 1vmin);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.App-company {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  align-items: center;
+}
+
+
+.App {
+  background-size: cover; 
+  background-image: url("back.jpg");
+  height: 300vh;
+  color: #5D5D5D;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 .App-logo {
-  font-family: 'Bungee', cursive;
-  color: whitesmoke;
   position: absolute;
-  font-size: calc(15px + 2vmin);
   top: 0;
   left: 0;
+
 }
 
 .App-header {
-  background-color: #0a0a0a;
-  /* background-image: url("back_3.jpg"); */
   background-size: cover; 
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(30px + 2vmin);
-  color: white;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 .App-projects {
@@ -42,7 +117,7 @@
 .App-project-image {
   width: 50vw;
   background-color: whitesmoke;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(15px + 2vmin);
   text-align: center;
 
@@ -50,21 +125,18 @@
 
 .App-project-text {
   width: 50vw;
-  background-color: #0a0a0a;
   /* background-color: #282c34; */
-  color: whitesmoke; 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(1px + 2vmin);
 
 
 
 }
 .App-team {
-  background-color: #0a0a0a;
   font-size: calc(3px + 2vmin);
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   padding-top: 50px;
   padding-bottom: 50px;
   
@@ -110,7 +182,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  font-family: 'Bungee', cursive;
+  font-family: 'Montserrat', sans-serif;
   color: #0a0a0a
 
 }
@@ -142,8 +214,16 @@
 }
 
 .avatar-quote {
-  font-size: 0.6em;
+  font-size: calc(3px + 2vmin);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   font-style: italic;
+}
+
+.avatar-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: calc(3px + 2vmin);
 }
 
 .fade-in {
@@ -167,3 +247,23 @@
   animation-delay: 0.7s;
 }
 
+
+.mobilehidden {
+  display: block;
+}
+
+.mobileshow {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobilehidden {
+    display: none;
+  }
+  .mobileshow {
+    display: block;
+  }
+  .kukaperiitext {
+    padding-right: 10vw;
+  }
+}
