@@ -58,9 +58,6 @@ class App extends Component {
                 The future of legal services, <b>for everyone</b>
                 {/* Creating the future of legal markets */}
               </p>
-              <br/>
-              <br/>
-              <br/> 
 
               <div className={`${classHide}`}>
                 <img style={{bottom: '10px', position: 'absolute', height: '3vh'}} src={down} alt="-"></img>
